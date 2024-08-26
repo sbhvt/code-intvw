@@ -1,0 +1,30 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.experimental.useFlatConfig": false,
+  "eslint.execArgv": null,
+
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
