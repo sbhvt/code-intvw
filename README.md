@@ -23,5 +23,11 @@ Your actual development happens in the `tdd-project/src` folder (replace hello w
 
 To confirm the initial setup run: `npm test` and `npm start`. The tests should pass a single test and the npm start should simply write "hello world" to the console. Throughout the exercise, both should always be capable of running. 
 
+## Goal
 
+You're building a system that can take a user's list of desired books and put an available book on hold at their preferred library branch. The API you'll be integrating with is in `fake-integration/src/routes` (base url is "http://127.0.0.1:2006/" which is what is running after you run `npm run run:fakeintegration`)
+
+- `/availability/:id` (GET, ID is an ISBN (valid values are "ISBN1234" or "ISBN4567"), response is a JSON array as seen in [`fake-integration/sample-fixtures/availability.json`](fake-integration/sample-fixtures/availability.json))
+
+- `/holds/:id` (GET or POST, ID is a user ID ("user1" or "user2"), response is a JSON array as seen in [`fake-integration/sample-fixtures/holds.json`](fake-integration/sample-fixtures/holds.json), POST body needs `resource_type`, `isbn` ("isbn1"/"isbn2"/"isbn3"), `branch_requested_to`)
 
