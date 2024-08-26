@@ -1,10 +1,9 @@
 import * as app from './src/app';
 
 const main = async () => {
-  console.log(app.helloWorld());
-  const awaitHello = await app.helloWorldAsync();
+  const result = await app.helloWorldAsync();
 
-  console.log(awaitHello.data);
+  console.log(result.data);
 };
 
 main();
